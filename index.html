@@ -40,18 +40,19 @@
             <div class="container">
                 <h2>Our Services</h2>
                 <ul>
-                    <li>Dent Removal - Our team of professionals will take care of any dent, no matter the size.</li>
-                    <li>Vehicle Refinishing - We only use industry-leading automotive paints to ensure a factory finish.</li>
-                    <li>FREE SAME-DAY ESTIMATES - Need an estimate for your insurance or for that fender bender? We will provide a free estimate with the repairs your vehicle needs</li>
-                    <li>Insurance Claims - Know your rights. You may have your vehicle repaired at the shop of YOUR choice. We work with insurance companies on your behalf and provide warranty for all the work done</li>
+                    <li><span class="subtitle">Dent Removal</span> Our team of professionals will take care of any dent, no matter the size</li>
+                    <li><span class="subtitle">Vehicle Refinishing</span> We only use industry leading automotive paints and products on your vehicle to insure a factory finish</li>
+                    <li><span class="subtitle">FREE SAME-DAY ESTIMATES</span> Need an estimate for your insurance or for that fender bender? We will provide a free estimate with the repairs your vehicle needs</li>
+                    <li><span class="subtitle">Insurance Claims</span> Know your rights. You may have your vehicle repaired at the shop of YOUR choice. We work with insurance companies on your behalf and provide warranty for all the work done</li>
                 </ul>
+                
             </div>
         </section>
 
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Us</h2>
-                <form>
+                <form id="contact-form">
                     <div class="form-group">
                         <label for="fullName">Full Name (*MANDATORY):</label>
                         <input type="text" id="fullName" name="fullName" required>
@@ -72,32 +73,37 @@
                         <label for="message">Message Body:</label>
                         <textarea id="message" name="message"></textarea>
                     </div>
-                    <button type="submit">Submit</button>
+                    <div class="form-group button-container">
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </section>
-
+        
         <section id="location" class="section">
             <div class="container">
                 <h2>Location</h2>
-                <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
-                <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
-
-                <section id="map">
+                <div class="contact-info">
+                    <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
+                    <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
+                </div>
+                <div id="map">
                     <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11504.783173141594!2d-79.2808818!3d43.8724948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d63b846d33b3%3A0x417a36d3321f2861!2sCentre%20Point%20Auto%20Body!5e0!3m2!1sen!2sca!4v1725668391030!5m2!1sen!2sca"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11504.783173141594!2d-79.2808818!3d43.8724948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d63b846d33b3%3A0x417a36d3321f2861!2sCentre%20Point%20Auto%20Body!5e0!3m2!1sen!2sca!4v1725668391030!5m2!1sen!2sca"
                         width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
-                </section>
-
-                <p>Address: 185 Bullock Dr Unit 16 & 17, Markham, ON L3P 7R4</p>
-                <p>Hours of Operation:</p>
-                <ul>
-                    <li>Mon – Fri: 8:30 AM – 6:00 PM</li>
-                    <li>Sat: 9:00 AM – 12:00 PM</li>
-                </ul>
+                </div>
+                <div class="address-info">
+                    <p>Address: 185 Bullock Dr Unit 16 & 17, Markham, ON L3P 7R4</p>
+                    <p>Hours of Operation:</p>
+                    <ul>
+                        <li>Mon – Fri: 8:30 AM – 6:00 PM</li>
+                        <li>Sat: 9:00 AM – 12:00 PM</li>
+                    </ul>
+                </div>
             </div>
         </section>
+        
     </main>
 
     <!-- Back to top button -->
@@ -111,7 +117,7 @@
                 Centre Point Auto Body. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="scripts.js"></script>
 
 </body>

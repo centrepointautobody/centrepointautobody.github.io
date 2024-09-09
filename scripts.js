@@ -28,6 +28,53 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling
+    });
+  }
+  
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 100;  // Adjust this value to your header height or preferred offset
+        const targetPosition = target.getBoundingClientRect().top;
+        const offsetPosition = targetPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+function scrollToContact() {
+    const target = document.querySelector('#contact');
+    const offset = 100;  // Adjust this value if needed
+    const targetPosition = target.getBoundingClientRect().top;
+    const offsetPosition = targetPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+    });
 }
+
+// script.js
+(function() {
+    emailjs.init("kalvin.centrepointautobody@gmail.com"); // Replace with your EmailJS user ID
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_1flmnrs', 'template_p5v2qac', this)
+        .then(function() {
+            alert('Your message has been sent successfully!');
+        }, function(error) {
+            alert('Failed to send the message. Please try again later.');
+        });
+});

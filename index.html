@@ -21,7 +21,7 @@
                     <li><a href="#location">Location</a></li>
                 </ul>
             </nav>
-            <button onclick="scrollToContact()">Book Appointment</button>
+            <button class="book-apmt" onclick="scrollToContact()">Book Appointment</button>
         
         </div>
 
@@ -36,49 +36,61 @@
             </div>
         </section>
 
-        <section id="services" class="section">
+
+        <section id="contact" class="section">
             <div class="container">
+                <h2></h2>
+                <div class="contact-info">
+                    <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
+                    <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="services" class="section, hero2">
+            <div class="service-container">
                 <h2>Our Services</h2>
                 <ul>
                     <li><span class="subtitle">Dent Removal</span> Our team of professionals will take care of any dent, no matter the size</li>
                     <li><span class="subtitle">Vehicle Refinishing</span> We only use industry leading automotive paints and products on your vehicle to insure a factory finish</li>
+
+                    </ul>
+                <ul>
                     <li><span class="subtitle">FREE SAME-DAY ESTIMATES</span> Need an estimate for your insurance or for that fender bender? We will provide a free estimate with the repairs your vehicle needs</li>
                     <li><span class="subtitle">Insurance Claims</span> Know your rights. You may have your vehicle repaired at the shop of YOUR choice. We work with insurance companies on your behalf and provide warranty for all the work done</li>
                 </ul>
                 
             </div>
+  
         </section>
+
+        
+        <section id="Testemonials" class="section">
+            <div class="container">
+                <h2>Testemonials</h2>
+                <div class="testemonials">
+                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                        <div class="elfsight-app-62c5c149-ef71-48ae-942d-981d4b672011" data-elfsight-app-lazy></div>
+    
+
+                </div>
+            </div>
+        </section>
+
 
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Us</h2>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="fullName">Full Name (*MANDATORY):</label>
-                        <input type="text" id="fullName" name="fullName" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email (*MANDATORY):</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message Body:</label>
-                        <textarea id="message" name="message"></textarea>
-                    </div>
-                    <div class="form-group button-container">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+                <div class="contact-info">
+                    <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
+                    <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
+                </div>
             </div>
         </section>
+
+        
         
         <section id="location" class="section">
             <div class="container">
@@ -95,11 +107,42 @@
                 </div>
                 <div class="address-info">
                     <p>Address: 185 Bullock Dr Unit 16 & 17, Markham, ON L3P 7R4</p>
-                    <p>Hours of Operation:</p>
-                    <ul>
-                        <li>Mon – Fri: 8:30 AM – 6:00 PM</li>
-                        <li>Sat: 9:00 AM – 12:00 PM</li>
-                    </ul>
+
+                    <section id="hours">
+                        <h2>Hours of Operation</h2>
+                        <table class="hours-table">
+                            <tr>
+                                <th>Monday</th>
+                                <td>8:30 AM – 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Tuesday</th>
+                                <td>8:30 AM – 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Wednesday</th>
+                                <td>8:30 AM – 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Thursday</th>
+                                <td>8:30 AM – 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Friday</th>
+                                <td>8:30 AM – 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Saturday</th>
+                                <td>9:00 AM – 12:00 PM</td>
+                            </tr>
+                            <tr>
+                                <th>Sunday</th>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </section>
+
+
                 </div>
             </div>
         </section>

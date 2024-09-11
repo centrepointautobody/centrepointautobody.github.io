@@ -9,7 +9,11 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('solid');
         }
     });
+
+
+    
 });
+
 
 
 // Get the button:
@@ -62,19 +66,3 @@ function scrollToContact() {
         behavior: 'smooth'
     });
 }
-
-// script.js
-(function() {
-    emailjs.init("kalvin.centrepointautobody@gmail.com"); // Replace with your EmailJS user ID
-})();
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm('service_1flmnrs', 'template_p5v2qac', this)
-        .then(function() {
-            alert('Your message has been sent successfully!');
-        }, function(error) {
-            alert('Failed to send the message. Please try again later.');
-        });
-});

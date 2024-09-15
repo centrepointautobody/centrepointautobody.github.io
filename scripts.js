@@ -95,3 +95,11 @@ function currentSlide(index) {
     currentSlideIndex = index;
     slides.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
 }
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'ArrowLeft') {
+        moveSlide(-1);
+    } else if (event.key === 'ArrowRight') {
+        moveSlide(1);
+    }
+});

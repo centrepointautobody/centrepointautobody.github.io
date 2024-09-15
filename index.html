@@ -1,49 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centre Point Auto Body</title>
-    <link rel="stylesheet" href="styles.css">    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header id="topHeader">
         <div class="container">
-            <a href="#home" class="logo">
-                <img src="img/logo.png" alt="Centre Point Auto Body" />
-            </a>        </div>
+            <a href="#home">
+                <img class="logo" src="img/logo-white.png" alt="Centre Point Auto Body" />
+            </a>
+        </div>
         <div id="headerlinks">
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#location">Location</a></li>
                 </ul>
             </nav>
             <button class="book-apmt" onclick="scrollToContact()">Book Appointment</button>
-        
+
         </div>
 
     </header>
-    
+
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to Centre Point Auto Body</h1>
-                <p>Your one-stop solution for all car repair needs.</p>
-                <button onclick="scrollToContact()">Get Started</button>
+                <div class="hero-text">
+                        <h1 class="welcome">Welcome to</h1>
+                        <h1>Centre Point Auto Body</h1>
+                        <h2>Your one-stop solution for all car repair needs.</h2>
+                        <p>Our dedicated team of experts will swiftly restore your vehicle to its original condition to ensure your
+                            safety and peace of mind.</p>
+                        <div class="button" onclick="scrollToContact()">Book Appointment</div>
+                </div>
+                <div class="hero-text2"></div>
+            </div>
             </div>
         </section>
 
 
-        <section id="contact" class="section">
+        <section id="about" class="section">
             <div class="container">
                 <h2></h2>
-                <div class="contact-info">
-                    <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
-                    <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
-                    <p>"We are a family owned body shop that specializes in auto body collision repair, and vehicle refinishing. Contact us to get a free estimate for your vehicle."
+                <div class="about-info">
+                    <h2>TRUSTED FOR 30+ YEARS</h2>
+                    <p>At Centre Point Auto Body, our 30 years of experience reflect our passion and dedication to
+                        exceptional workmanship. Our certified technicians, specializing in Toyota and Lexus repairs,
+                        deliver dealership-quality work at a fraction of the price. We handle all makes and models with
+                        precision and care, ensuring your vehicle looks and performs like new. Trust us to bring expert
+                        craftsmanship and value to every repair.
                     </p>
                 </div>
             </div>
@@ -55,31 +74,229 @@
             <div class="service-container">
                 <h2>Our Services</h2>
                 <ul>
-                    <li><span class="subtitle">Dent Removal</span> Our team of professionals will take care of any dent, no matter the size</li>
-                    <li><span class="subtitle">Vehicle Refinishing</span> We only use industry leading automotive paints and products on your vehicle to insure a factory finish</li>
 
-                    </ul>
-                <ul>
-                    <li><span class="subtitle">FREE SAME-DAY ESTIMATES</span> Need an estimate for your insurance or for that fender bender? We will provide a free estimate with the repairs your vehicle needs</li>
-                    <li><span class="subtitle">Insurance Claims</span> Know your rights. You may have your vehicle repaired at the shop of YOUR choice. We work with insurance companies on your behalf and provide warranty for all the work done</li>
+                    <li>
+                        <h4>We've got you covered</h4>
+                        We are a family owned body shop that specializes in auto body collision repair, and vehicle refinishing. Contact us to get a free estimate for your vehicle
+                    </li>
+
                 </ul>
-                
+                <ul>
+                    <li><span class="subtitle">FREE SAME-DAY ESTIMATES</span> </li>
+                    <li><span class="subtitle">INSURANCE CLAIMS</span> </li>
+                </ul>
+
+                <div class="button" onclick="scrollToContact()">Book Appointment</div>
+
             </div>
-  
+
+        </section>
+
+        <section class="split-container">
+                    
+            <div class="split-row">
+                <div class="split-left">
+
+                    <div class="icon-square">
+                        <img src="img/car-icon2.png" alt="Icon" class="icon">
+
+                    </div>
+                    <h4>Dent Removal</h4>
+
+                    <p>Our team of professionals will take care of any dent, no matter the size</p>
+                </div>
+
+                <div class="split-right">
+                    <img src="img/stock1.png" alt="Image">
+
+                </div>
+            </div>
+
+
+            <div class="split-row">
+                <div class="split-left">
+                    <img src="img/stock4.png" alt="Image">
+
+
+                </div>
+                
+                <div class="split-right">
+                    <div class="icon-square">
+                        <img src="img/spraygun-icon2.png" alt="Icon" class="icon">
+                    </div>
+                    <h4>Vehicle Refinishing</h4>
+                    <p>We only use industry leading automotive paints and products on your vehicle to insure a factory finish
+                    </p>
+                </div>
+            </div>
+            <div class="split-row">
+                <div class="split-left">
+                    <div class="icon-square">
+                        <img src="img/insurance-icon2.png" alt="Icon" class="icon">
+                    </div>
+                    <h4>Insurance Claims</h4>
+
+                        <p>Know your rights<br>
+                            You may have your vehicle repaired at the shop of <b>YOUR</b> choice<br>
+                             We work with insurance companies on your behalf and provide warranty for all the work done
+                        </p>
+                </div>
+                <div class="split-right">
+                    <img src="img/3.jpg" alt="Image">
+
+                </div>
+            </div>
+
+            <div class="split-row">
+                <div class="split-left">
+                    <img src="img/stock2.png" alt="Image">
+
+                </div>
+                
+                <div class="split-right">
+                
+                    <div class="icon-square">
+                        <img src="img/estimate-icon2.png" alt="Icon" class="icon">
+                    </div>
+                    <h4>Free Same-Day Estimates</h4>
+                    <p>Need an estimate for your insurance or for that fender bender?<br>We will provide a free estimate with the repairs your vehicle needs
+                    </p>
+                </div>
+            </div>
+
         </section>
 
         
-        <section id="Testemonials" class="section">
+        <section id="backonroad" class="section">
             <div class="container">
-                <h2>Testemonials</h2>
-                <div class="testemonials">
-                        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-                        <div class="elfsight-app-62c5c149-ef71-48ae-942d-981d4b672011" data-elfsight-app-lazy></div>
-    
+                <h2>We'll get you back on the road.</h2>
+                <div class="backonroad">
+
 
                 </div>
             </div>
         </section>
+
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2>Testimonials</h2>
+                <div class="testimonials">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-62c5c149-ef71-48ae-942d-981d4b672011" data-elfsight-app-lazy></div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="gallery" class="section">
+            <div class="container">
+
+<img class="galleryimg" src="img/gallery/beforeafter/beforeandafter5.jpg">
+
+                <div class="gallery">
+
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car1.jpg">
+                    </div>
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car2.jpg">
+
+                    </div>
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car3.jpg">
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="gallery">
+
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car4.jpg">
+                    </div>
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car5.jpg">
+                    </div>
+                    <div class="gallery-item3">
+                        <img src="img/gallery/beforeafter/car6.jpg">
+                    </div>
+
+                </div>
+
+                <div class="gallery">
+
+                    <div class="gallery-item2">
+                        <img src="img/gallery/beforeafter/f1.jpg">
+                    </div>
+                    <div class="gallery-item2">
+                        <img src="img/gallery/beforeafter/f2.jpg">
+                    </div>
+
+
+                </div>
+
+                <div class="gallery">
+
+                    <div class="gallery-item2">
+                        <img src="img/gallery/beforeafter/t1.jpg">
+                    </div>
+                    <div class="gallery-item2">
+                        <img src="img/gallery/beforeafter/t2.jpg">
+                    </div>
+
+
+                </div>
+                <img class="galleryimg" src="img/gallery/beforeafter/gallery2.jpg">
+
+ 
+
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="img/gallery/g1.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g2.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g3.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g4.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g5.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g6.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g7.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g8.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g9.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g10.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g11.jpg"></div>
+                    <div class="slide"><img src="img/gallery/g12.jpg"></div>
+
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            <div class="thumbnails">
+                <img src="img/gallery/g1.jpg" alt="Thumbnail 1" onclick="currentSlide(0)">
+                <img src="img/gallery/g2.jpg" alt="Thumbnail 2" onclick="currentSlide(1)">
+                <img src="img/gallery/g3.jpg" alt="Thumbnail 3" onclick="currentSlide(2)">
+                <img src="img/gallery/g4.jpg" alt="Thumbnail 4" onclick="currentSlide(3)">
+                <img src="img/gallery/g5.jpg" alt="Thumbnail 5" onclick="currentSlide(4)">
+                <img src="img/gallery/g6.jpg" alt="Thumbnail 6" onclick="currentSlide(5)">
+                <img src="img/gallery/g7.jpg" alt="Thumbnail 7" onclick="currentSlide(6)">
+                <img src="img/gallery/g8.jpg" alt="Thumbnail 8" onclick="currentSlide(7)">
+                <img src="img/gallery/g9.jpg" alt="Thumbnail 9" onclick="currentSlide(8)">
+                <img src="img/gallery/g10.jpg" alt="Thumbnail 10" onclick="currentSlide(9)">
+                <img src="img/gallery/g11.jpg" alt="Thumbnail 11" onclick="currentSlide(10)">
+                <img src="img/gallery/g12.jpg" alt="Thumbnail 12" onclick="currentSlide(11)">
+
+            </div>
+
+        </div>
+
+
+
+        </section>
+
 
 
         <section id="contact" class="section">
@@ -92,78 +309,150 @@
             </div>
         </section>
 
-        
-        
+
+
         <section id="location" class="section">
             <div class="container">
                 <h2>Location</h2>
-                <div class="contact-info">
-                    <p>Phone: <a href="tel:9054714480">905-471-4480</a></p>
-                    <p>Email: <a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
-                </div>
-                <div id="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11504.783173141594!2d-79.2808818!3d43.8724948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d63b846d33b3%3A0x417a36d3321f2861!2sCentre%20Point%20Auto%20Body!5e0!3m2!1sen!2sca!4v1725668391030!5m2!1sen!2sca"
-                        width="800" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                </div>
-                <div class="address-info">
-                    <p>Address: 185 Bullock Dr Unit 16 & 17, Markham, ON L3P 7R4</p>
 
-                    <section id="hours">
-                        <h2>Hours of Operation</h2>
-                        <table class="hours-table">
-                            <tr>
-                                <th>Monday</th>
-                                <td>8:30 AM – 6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Tuesday</th>
-                                <td>8:30 AM – 6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Wednesday</th>
-                                <td>8:30 AM – 6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Thursday</th>
-                                <td>8:30 AM – 6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Friday</th>
-                                <td>8:30 AM – 6:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Saturday</th>
-                                <td>9:00 AM – 12:00 PM</td>
-                            </tr>
-                            <tr>
-                                <th>Sunday</th>
-                                <td>Closed</td>
-                            </tr>
-                        </table>
-                    </section>
 
+                <div class="twoin1">
+
+                    <div id="map">
+                        <p style="font-weight: bold;"> 185 Bullock Dr Unit 16 & 17, Markham, ON L3P 7R4</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11504.783173141594!2d-79.2808818!3d43.8724948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d63b846d33b3%3A0x417a36d3321f2861!2sCentre%20Point%20Auto%20Body!5e0!3m2!1sen!2sca!4v1725668391030!5m2!1sen!2sca"
+                            width="800" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                    <div class="hours-info">
+
+
+
+                        <section id="hours">
+                            <h3>Hours of Operation</h3>
+                            <table class="hours-table">
+                                <tr>
+                                    <th>Monday</th>
+                                    <td>8:30 AM – 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Tuesday</th>
+                                    <td>8:30 AM – 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Wednesday</th>
+                                    <td>8:30 AM – 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Thursday</th>
+                                    <td>8:30 AM – 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Friday</th>
+                                    <td>8:30 AM – 6:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Saturday</th>
+                                    <td>9:00 AM – 12:00 PM</td>
+                                </tr>
+                                <tr>
+                                    <th>Sunday</th>
+                                    <td>Closed</td>
+                                </tr>
+                            </table>
+                            <div><br>
+                                Closed on Statutory Holidays
+                            </div>
+                        </section>
+
+                    </div>
 
                 </div>
             </div>
         </section>
-        
+
     </main>
 
     <!-- Back to top button -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
     <footer>
-        <div class="container">
-            
-            &nbspCopyright ©
-                <script type="text/javascript">document.write(new Date().getFullYear());</script>
-                Centre Point Auto Body. All rights reserved.</p>
+
+
+        <div class="footer-master">
+
+            <div class="footer-container1">
+
+                <div class="footer-links">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#location">Location</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+                <div class="footer-contact">
+                    <h4><b>Centre Point Auto Body</b></h4>
+                    <a href="https://www.google.com/maps/place/Centre+Point+Auto+Body/@43.8834919,-79.2935418,13z/data=!3m1!5s0x89d4d67187b25169:0x9d1cc75d28b3e307!4m6!3m5!1s0x89d4d63b846d33b3:0x417a36d3321f2861!8m2!3d43.8724948!4d-79.2808818!16s%2Fg%2F11bzyph3hy?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p style="line-height: 22px;">
+                        185 Bullock Dr Unit 16 & 17,<br>
+                        Markham, ON,<br>
+                        L3P 7R4
+                    </p></a>
+                    
+                    <br>
+                    <p><a href="tel:9054714480">905-471-4480</a></p>
+                    <p><a href="mailto:centrepointautobody@outlook.com">centrepointautobody@outlook.com</a></p>
+                </div>
+
+                <div class="container">
+
+                </div>
+            </div>
+
+            <div class="footer-container2">
+
+                <div class="copyright">
+
+ 
+                </div>
+
+                <div class="container">
+
+
+                </div>
+
+            </div>
+
+            <div class="footer-container3">
+
+                <div class="copyright">
+
+                    &nbspCopyright ©
+                    <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                    Centre Point Auto Body. All rights reserved.</p>
+                </div>
+
+                <div class="footer-logo">
+                    <a href="#home"><img src="img/logo-fullwhite.png" alt="Centre Point Auto Body"></a>
+
+                </div>
+
+            </div>
+
         </div>
+
     </footer>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="scripts.js"></script>
 
 </body>
+
 </html>

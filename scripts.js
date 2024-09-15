@@ -2,19 +2,32 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Website loaded successfully!');
 
     window.addEventListener('scroll', function() {
+        var logo = document.querySelector('.logo');
+
         const header = document.getElementById('topHeader');
         if (window.scrollY > 500) {
             header.classList.add('solid');
+            logo.src = 'img/logo-trans2.png';  // New logo image path
         } else {
             header.classList.remove('solid');
+            logo.src = 'img/logo-white.png';
+
         }
     });
 
+    window.addEventListener('scroll', function() {
+        var logo = document.querySelector('.logo');
+    
+        // Check if the user has scrolled more than 500px
+        if (window.scrollY > 500) {
+            // Change the image source to a different logo
 
+        } else {
+            // Revert to the original logo if the user scrolls back up
+        }
+    });
     
 });
-
-
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -65,4 +78,20 @@ function scrollToContact() {
         top: offsetPosition,
         behavior: 'smooth'
     });
+}
+
+
+let currentSlideIndex = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    currentSlideIndex = (currentSlideIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+}
+
+function currentSlide(index) {
+    const slides = document.querySelector('.slides');
+    currentSlideIndex = index;
+    slides.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
 }

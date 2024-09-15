@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     color: #000000;
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -20,11 +20,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-.book-apmt {margin-left: 50px;}
+
+.book-apmt {
+    margin-left: 30px;
+}
 
 /* Header Styles */
 header {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.63);
     color: white;
     position: fixed;
     width: 100%;
@@ -35,8 +38,8 @@ header {
     transition: background-color 0.3s, padding 0.3s, box-shadow 0.3s;
 }
 
-header img.logo {
-    max-width: 150px;
+header .logo {
+    margin-right: 805px;
 }
 
 header nav ul {
@@ -47,8 +50,10 @@ header nav ul {
 
 header nav ul li a {
     color: white;
+
     text-decoration: none;
-    font-weight: 600;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
@@ -58,45 +63,62 @@ header nav ul li a:hover {
 }
 
 header button {
-    background-color: #f1faee;
-    color: #e63946;
+    background-color: #ed1c24;
+    color: white;
     border: none;
     padding: 0.75rem 1.5rem;
+    margin: 10px 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: background-color 0.3s, transform 0.3s;
-    border: red 2px solid;
+    border: ed1c24(255, 255, 255) 2px solid;
 }
 
 header button:hover {
-    background-color: #ed1c24;
+    background-color: #cc141a;
     color: white;
-    border: white 2px solid;
 }
 
 #topHeader.solid {
-    background-color: #991014;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+#topHeader.solid a {
+    color: black;
+}
+
 
 #headerlinks {
     display: flex;
     align-items: center;
-    padding: 5px 25px;
 }
-
+    
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url("img/1.jpg") center/cover no-repeat;
+    background: url("img/2.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .hero-content {
+    width: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .hero-content h1 {
@@ -116,20 +138,84 @@ header button:hover {
 
 .hero-content button:hover {
     background-color: #e63946;
-    transform: scale(1.05);
 }
 
+.hero-text {
+    padding-left: 100px;
+    width: 40%;
+    color: white;
+    text-align: left;
+}
+
+.hero-text h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-text h2{
+color: #ed1c24;
+}
+.hero-text p {
+font-size: 15px;
+}
+
+.hero-text2{
+    width: 60%;
+    float: right;
+}
 /* Hero Section */
 .hero2 {
     height: 100vh;
-    background: url("img/2.jpg") center/cover no-repeat;
+    background: url("img/1.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
+
+
+.about-info p{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .button {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+
+.button {
+    background-color: #ed1c24;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    border: ed1c24(255, 255, 255) 2px solid;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover {
+    background-color: #cc141a;
+    color: white;
+}
+
+
+
+
 .service-container {
-width: 50%;
+    width: 50%;
 }
 
 
@@ -141,45 +227,62 @@ width: 50%;
 .section h2 {
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 3rem;
+    color: #000000;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 2rem;
     font-size: 2rem;
     color: #000000;
 }
 
-/* Footer */
-footer {
-    background-color: #ed1c24;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-}
-
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: 2px solid #fff; /* Add a white border */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: 2px solid #fff;
+    /* Add a white border */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition */
 }
 
 #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow on hover */
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    /* Slightly deeper shadow on hover */
 }
 
 /* Services Section Styles */
 .subtitle {
     font-weight: bold;
-    font-size: 1.2em; /* Adjust the size as needed */
+    font-size: 1.2em;
+    /* Adjust the size as needed */
 
 }
 
@@ -188,8 +291,8 @@ footer {
 }
 
 #services h2 {
+    margin-top: 0px;
     text-align: center;
-    margin-bottom: 1em;
     font-size: 50px;
     color: white;
 }
@@ -207,8 +310,10 @@ footer {
     padding: 2em 2em;
     border: 1px solid white;
     margin: 0 1em;
-    flex: 1 1 200px; /* Ensures all boxes are the same size */
-    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    flex: 1 1 200px;
+    /* Ensures all boxes are the same size */
+    box-sizing: border-box;
+    /* Includes padding and border in the element's total width and height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,106 +322,499 @@ footer {
     background-color: rgba(0, 0, 0, 0.45);
 }
 
-    /* Contact Section Styles */
-    
-    #contact {
+/* Contact Section Styles */
+
+#contact {
     background: #f4f4f4;
     padding: 2em;
-    }
-    
-    #contact h2 {
+}
+
+#contact h2 {
     text-align: center;
     margin-bottom: 1em;
-    }
-    
-
-    
+}
 
 
 
-    .button-container {
-        text-align: center;
-    }
-    
 
-    /* Location Section Styles */
-    
-    #location {
-    border-top: 1px solid #ddd;
+
+
+.button-container {
+    text-align: center;
+}
+
+
+/* Location Section Styles */
+
+#location {
     padding-top: 2em;
-    }
-    
-    #location h3 {
+}
+
+#location h3 {
     margin-bottom: 1em;
-    }
-    
-    #location p {
+}
+
+#location p {
     margin-bottom: 0.5em;
-    }
-    
-    #location address {
+}
+
+#location address {
     line-height: 1.5em;
-    }
+}
 
-    .section {
-        padding: 2em 0;
+.section {
+    padding: 2em 0;
+    text-align: center;
+}
+
+
+.contact-info {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+#map {
+    width: 45%;
+    margin: 2em 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+iframe {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+.twoin1 {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hours-info {
+    width: 45%;
+}
+
+#hours {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.hours-table th {
+    text-align: left;
+    background-color: #ffffff;
+}
+
+.hours-table td {
+    text-align: right;
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #ff0000;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-master {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    width: 80%;
+    text-align: left;
+}
+
+.footer-links nav {
+
+    justify-content: center;
+}
+
+.footer-links nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links nav ul li {
+    margin: 15px 0px;
+}
+
+.footer-links nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    width: 20%;
+    font-size: 12px;
+    text-align: left;
+    float: right;
+    color: white;
+}
+
+.footer-contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-container3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: left;
+    float: left;
+}
+
+.footer-logo {
+    float: right;
+}
+
+.footer-logo img {
+    width: 75%;
+    float: right;
+    padding-right: 30px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.split-container {
+    flex-direction: column;
+    display: flex;
+}
+
+.split-row
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.split-row p {
+text-align: center;
+}
+
+.split-row img {
+width: 100%;
+
+}
+
+.split-row h4 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.split-left {
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.split-left p {
+    
+    text-align: center;
+    padding: 0px 60px;
+    font-size: 18px;
+    color: #2b2b2b;
+} 
+
+
+.split-right {
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-right p {
+    text-align: center;
+    padding: 0px 60px;
+    font-size: 18px;
+}
+
+
+.left {
+    background-color: #f8f9fa; /* Optional background color */
+}
+
+.right {
+    background-color: #ffffff; /* Optional background color */
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.icon-square {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-color: #ed1c24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#backonroad{
+
+        height: 30vh;
+        background: url("img/8.png") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
-    }
-    
-
-    .contact-info, .address-info {
-        margin-bottom: 1.5em;
-    }
-    
-    .contact-info p, .address-info p, .address-info ul {
-        margin: 0.5em 0;
-    }
-    
-    #map {
-        margin: 2em 0;
-    }
-    
-    iframe {
         width: 100%;
-        height: 500px;
-    }
     
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    ul li {
-        margin: 0.5em 0;
-    }
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+}
+
+#backonroad h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
 
 
-    #hours {
-        width: 100%;
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
+
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+}
+
+#gallery h3 {
+    text-align: left;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-item3
+{
     
-    .hours-table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 33.3333333333333%;
+
+}
+
+.gallery-item2
+{
     
-    .hours-table th,
-    .hours-table td {
-        padding: 10px;
-        border-bottom: 1px solid #ddd;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
     
-    .hours-table th {
-        text-align: left;
-        background-color: #f8f8f8;
-    }
-    
-    .hours-table td {
-        text-align: right;
-    }
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 60px;
+    height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.galleryimg {
+margin-top: 50px;
+margin-bottom: -7px;
+}
+
+

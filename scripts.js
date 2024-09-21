@@ -52,13 +52,22 @@ function topFunction() {
   }
   
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         
         const target = document.querySelector(this.getAttribute('href'));
-        const offset = 100;  // Adjust this value to your header height or preferred offset
+        let offset = 50;  // Adjust this value to your header height or preferred offset
         const targetPosition = target.getBoundingClientRect().top;
+        
+        if (this.getAttribute('href') === "#gallery") {
+            offset = 80;  // Adjust this value to your preferred offset for the gallery
+        }
+        if (this.getAttribute('href') === "#services") {
+            offset = -50;  // Adjust this value to your preferred offset for the gallery
+        }
+
+    
         const offsetPosition = targetPosition + window.pageYOffset - offset;
 
         window.scrollTo({
@@ -70,7 +79,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function scrollToContact() {
     const target = document.querySelector('#contact');
-    const offset = 100;  // Adjust this value if needed
+    const offset = 50;  // Adjust this value if needed
     const targetPosition = target.getBoundingClientRect().top;
     const offsetPosition = targetPosition + window.pageYOffset - offset;
 
@@ -109,10 +118,27 @@ document.addEventListener('keydown', function(event) {
 
 
 ////////////////////////////////////////////////
-$("#slider").on("input change", (e)=>{
+// JavaScript
+$("#slider1-range").on("input change", (e) => {
     const sliderPos = e.target.value;
-    // Update the width of the foreground image
-    $('.foreground-img').css('width', `${sliderPos}%`)
-    // Update the position of the slider button
-    $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
-  });
+    $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`);
+    $('.foreground-img').css('width', `${sliderPos}%`);
+});
+
+$("#slider2-range").on("input change", (e) => {
+    const sliderPos = e.target.value;
+    $('.slider-button2').css('left', `calc(${sliderPos}% - 18px)`);
+    $('.foreground-img2').css('width', `${sliderPos}%`);
+});
+
+$("#slider3-range").on("input change", (e) => {
+    const sliderPos = e.target.value;
+    $('.slider-button3').css('left', `calc(${sliderPos}% - 18px)`);
+    $('.foreground-img3').css('width', `${sliderPos}%`);
+});
+
+$("#slider4-range").on("input change", (e) => {
+    const sliderPos = e.target.value;
+    $('.slider-button4').css('left', `calc(${sliderPos}% - 18px)`);
+    $('.foreground-img4').css('width', `${sliderPos}%`);
+});

@@ -106,10 +106,7 @@ header button:hover {
     width: 100%;
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     
 }
 
@@ -782,7 +779,7 @@ width: 100%;
 }
 
 
-.slider {
+.slider1 {
     position: relative;
     width: 100%;
     max-width: 1200px;
@@ -852,7 +849,116 @@ width: 100%;
 
 .galleryimg {
 margin-top: 50px;
-margin-bottom: -7px;
+margin-bottom:-40px;
 }
 
 
+/*
+
+
+
+
+*/
+
+.sliderbody {
+    margin: 0;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidercontainer {
+    position: relative;
+    width: 1500px;
+    height: 700px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+
+}
+
+.slidercontainer .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 1500px 100%;
+}
+
+.slidercontainer .background-img {
+    background-image: url('img/gallery/beforeafter/car3.jpg');
+}
+
+.slidercontainer .foreground-img {
+    background-image: url('img/gallery/beforeafter/car1.jpg');
+    width: 50%;
+}
+
+.slidercontainer .slider {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+    margin: 0;
+    transition: all 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidercontainer .slider:hover {
+    background: rgba(255, 255, 255, 0);
+}
+
+.slidercontainer .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 700px;
+    background: white;
+    cursor: pointer;
+}
+
+.slidercontainer .slider::-moz-range-thumb {
+    width: 15px;
+    height: 700px;
+    background: white;
+    cursor: pointer;
+}
+
+.slidercontainer .slider-button {
+    pointer-events: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    left: calc(50% - 18px); /* Adjusted to center the button */
+    top: calc(50% - 18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slidercontainer .slider-button:after {
+    content: '';
+    padding: 3px;
+    display: inline-block;
+    border: solid #5d5d5d;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+}
+
+.slidercontainer .slider-button:before {
+    content: '';
+    padding: 3px;
+    display: inline-block;
+    border: solid #5d5d5d;
+    border-width: 0 2px 2px 0;
+    transform: rotate(135deg);
+}

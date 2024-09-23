@@ -128,8 +128,21 @@ header button:hover {
     color: white;
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 50px;
+    margin: 150px;
+    border: 1px solid rgb(255, 255, 255); /* Slightly opaque border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
 
 }
+.glossy-transparent-blurred-div {
+
+}
+
+
+
+
 
 .hero-content h1 {
     font-size: 3rem;
@@ -144,6 +157,7 @@ header button:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    
 }
 
 .hero-content button:hover {
@@ -151,22 +165,21 @@ header button:hover {
 }
 
 .hero-text {
-    padding-left: 100px;
-    width: 70%;
+    width: 100%;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-text-sub {
-    padding-left: 100px;
-    width: 40%;
+    width: 100%;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 .welcome{
     color: #ed1c24;
-    font-size: 4rem !important;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    padding-top: 0px;
 
 }
 .hero-text h1{
@@ -179,16 +192,19 @@ header button:hover {
 
 .hero-text-sub h2{
     margin-top: 0px;
-color: #ed1c24;
+color: #ffffff;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
 .hero-text-sub p {
     margin-top: 0px;
 font-size: 15px;
-width: 64%;}
+width: 100%;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 .hero-text-sub button {
-
+float: center;
 }
 
 .hero-text2{
@@ -223,7 +239,7 @@ width: 64%;}
 
 .hero-content .button {
     width: 20%;
-    float: left;
+    float: center;
     text-align: center;
 }
 
@@ -1174,4 +1190,51 @@ margin-bottom:-20px;
     border: solid #5d5d5d;
     border-width: 0 2px 2px 0;
     transform: rotate(135deg);
+}
+
+/*MOBILE DESIGN*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Your styles here */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Your styles here */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Your styles here */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Your styles here */
+    
+    .hero{
+        background: url("img/2.jpg") right/cover no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    
+    .hero-text h1 {
+        font-size: 250% !important;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    /* Your styles here */
+    .hero{
+        background: url("img/2.jpg") right/cover no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    
+    .hero-text h1 {
+        -size: 250% !important;
+    }
+
 }

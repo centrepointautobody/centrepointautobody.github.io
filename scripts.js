@@ -142,3 +142,6 @@ $("#slider4-range").on("input change", (e) => {
     $('.slider-button4').css('left', `calc(${sliderPos}% - 18px)`);
     $('.foreground-img4').css('width', `${sliderPos}%`);
 });
+
+
+

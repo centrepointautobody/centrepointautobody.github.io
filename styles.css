@@ -45,12 +45,11 @@ header .logo {
 
 }
 
-header .logo:hover{
+header .logo:hover {
     scale: 1.05;
 }
 
-header nav {
-}
+header nav {}
 
 header nav ul {
     list-style: none;
@@ -99,15 +98,14 @@ header button:hover {
     color: black;
 }
 
-#topHeader div.container{
-}
+#topHeader div.container {}
 
 
 #headerlinks {
     display: flex;
     align-items: center;
 }
-    
+
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -119,12 +117,12 @@ header button:hover {
     width: 100%;
 
     /* Create the parallax scrolling effect */
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .hero-content {
@@ -135,14 +133,15 @@ header button:hover {
     background-color: rgba(0, 0, 0, 0.212);
     padding: 50px;
     margin: 150px;
-    border: 1px solid rgb(255, 255, 255); /* Slightly opaque border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgb(255, 255, 255);
+    /* Slightly opaque border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     padding: 20px;
 
 }
-.glossy-transparent-blurred-div {
 
-}
+.glossy-transparent-blurred-div {}
 
 
 
@@ -161,7 +160,7 @@ header button:hover {
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    
+
 }
 
 .hero-content button:hover {
@@ -179,42 +178,46 @@ header button:hover {
     color: white;
     text-align: center;
 }
-.welcome{
+
+.welcome {
     color: #ed1c24;
     font-size: 3rem !important;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     padding-top: 0px;
-    
+
 
 }
-.hero-text h1{
+
+.hero-text h1 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 6rem ;
+    font-size: 6rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero-text-sub h2{
+.hero-text-sub h2 {
     margin-top: 0px;
-color: #ffffff;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
 }
+
 .hero-text-sub p {
     margin-top: 0px;
-font-size: 15px;
-width: 100%;
-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-text-sub button {
-float: center;
+    float: center;
 }
 
-.hero-text2{
+.hero-text2 {
     width: 60%;
     float: right;
 }
+
 /* Hero Section */
 .hero2 {
     height: 100vh;
@@ -224,20 +227,20 @@ float: center;
     justify-content: center;
     text-align: center;
 
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-.about-info p{
+.about-info p {
     font-size: 1.5rem;
     margin-bottom: 5.5rem;
 }
 
-.about-info h2{
+.about-info h2 {
     font-size: 6rem !important;
 }
 
@@ -411,7 +414,7 @@ h3 {
     text-align: center;
 }
 
-#contact-info{
+#contact-info {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -425,12 +428,9 @@ h3 {
 
 
 
-.contact-infoA p
-{    
+.contact-infoA p {}
 
-}
-
-#contact-info h3{
+#contact-info h3 {
     margin: 20px 0;
 }
 
@@ -444,19 +444,17 @@ h3 {
     text-decoration: underline;
 }
 
-.contact-info1 {
-}
+.contact-info1 {}
+
 .contact-info1A {
     margin: 0 20px 0 10px;
 }
 
 
 
-.contact-img{
-}
+.contact-img {}
 
-.contact-infoB{
-}
+.contact-infoB {}
 
 .contact-infoB img {
     width: 100%;
@@ -466,7 +464,7 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
     height: 544px;
-    
+
 }
 
 #map {
@@ -475,7 +473,7 @@ h3 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: -30px auto 2em auto; 
+    margin: -30px auto 2em auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -502,16 +500,15 @@ ul li {
     align-items: center;
 }
 
-.hours-info1{
-}
-.hours-info {
-}
+.hours-info1 {}
+
+.hours-info {}
 
 #hours {
     height: 544px;
     width: 85%;
     background-color: #fff;
-    padding: 20px;   
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -538,10 +535,11 @@ ul li {
     text-align: right;
 }
 
-#hours h3{
-margin: 20px 0;
+#hours h3 {
+    margin: 20px 0;
 }
-.leftnright{
+
+.leftnright {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -615,7 +613,7 @@ footer {
     color: white;
 }
 
-.footer-contact a{
+.footer-contact a {
     color: white;
     text-decoration: none;
 }
@@ -676,21 +674,20 @@ footer h4 {
     display: flex;
 }
 
-.split-row
-{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-width: 100%;
+.split-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .split-row p {
-text-align: center;
+    text-align: center;
 }
 
 .split-row img {
-width: 100%;
+    width: 100%;
 
 }
 
@@ -703,27 +700,27 @@ width: 100%;
 
 .split-left {
     width: 50%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .split-left p {
-    
+
     text-align: center;
     padding: 0px 60px;
     font-size: 18px;
     color: #2b2b2b;
-} 
+}
 
 
 .split-right {
     width: 50%;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
@@ -739,11 +736,13 @@ width: 100%;
 
 
 .left {
-    background-color: #f8f9fa; /* Optional background color */
+    background-color: #f8f9fa;
+    /* Optional background color */
 }
 
 .right {
-    background-color: #ffffff; /* Optional background color */
+    background-color: #ffffff;
+    /* Optional background color */
 }
 
 .image {
@@ -753,8 +752,10 @@ width: 100%;
 }
 
 .icon-square {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
+    width: 100px;
+    /* Adjust the size as needed */
+    height: 100px;
+    /* Adjust the size as needed */
     background-color: #ed1c24;
     display: flex;
     align-items: center;
@@ -766,22 +767,22 @@ width: 100%;
     max-height: 100%;
 }
 
-#backonroad{
+#backonroad {
 
-        height: 40vh;
-        background: url("img/8.png") center/cover no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-    
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
+    height: 40vh;
+    background: url("img/8.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 #backonroad h2 {
@@ -802,7 +803,7 @@ width: 100%;
     width: 100%;
 }
 
-#gallery{
+#gallery {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -811,28 +812,29 @@ width: 100%;
 
     width: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.66), #00000052),
-                url("img/bg1.jpg") center/cover no-repeat;
+        url("img/bg1.jpg") center/cover no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-    
-
-padding-bottom: 150px;
-}
     /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 
 
-#gallery h2{
+    padding-bottom: 150px;
+}
+
+/* Create the parallax scrolling effect */
+
+
+#gallery h2 {
     margin-bottom: 0px;
     margin-top: 40px;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
 
 }
 
-#gallery h4{
+#gallery h4 {
     margin-top: 0px;
     margin-bottom: 80px;
     font-size: 2rem;
@@ -847,9 +849,8 @@ padding-bottom: 150px;
     margin-bottom: 10px;
 }
 
-.gallery-item3
-{
-    
+.gallery-item3 {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -858,9 +859,8 @@ padding-bottom: 150px;
 
 }
 
-.gallery-item2
-{
-    
+.gallery-item2 {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -886,7 +886,7 @@ padding-bottom: 150px;
     align-items: center;
     margin: 0;
     box-shadow: #000000 0px 0px 2px;
-    
+
 }
 
 .slides {
@@ -906,7 +906,8 @@ padding-bottom: 150px;
 
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -925,7 +926,8 @@ padding-bottom: 150px;
     right: 10px;
 }
 
-.prev:hover, .next:hover{
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.705);
 }
 
@@ -950,8 +952,8 @@ padding-bottom: 150px;
 }
 
 .galleryimg {
-margin-top: 20px;
-margin-bottom:-20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
 }
 
 
@@ -962,9 +964,8 @@ margin-bottom:-20px;
 
 */
 
-.slideflex
-{
-    display:flex;
+.slideflex {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
@@ -983,7 +984,7 @@ margin-bottom:-20px;
     width: 600px;
     height: 400px;
     border: 4px solid white;
-    
+
 }
 
 .slidercontainer .img {
@@ -1075,7 +1076,8 @@ margin-bottom:-20px;
     height: 30px;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px); /* Adjusted to center the button */
+    left: calc(50% - 18px);
+    /* Adjusted to center the button */
     top: calc(50% - 18px);
     display: flex;
     justify-content: center;
@@ -1108,7 +1110,8 @@ margin-bottom:-20px;
     height: 30px;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px); /* Adjusted to center the button */
+    left: calc(50% - 18px);
+    /* Adjusted to center the button */
     top: calc(50% - 18px);
     display: flex;
     justify-content: center;
@@ -1141,7 +1144,8 @@ margin-bottom:-20px;
     height: 30px;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px); /* Adjusted to center the button */
+    left: calc(50% - 18px);
+    /* Adjusted to center the button */
     top: calc(50% - 18px);
     display: flex;
     justify-content: center;
@@ -1174,7 +1178,8 @@ margin-bottom:-20px;
     height: 30px;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px); /* Adjusted to center the button */
+    left: calc(50% - 18px);
+    /* Adjusted to center the button */
     top: calc(50% - 18px);
     display: flex;
     justify-content: center;
@@ -1197,51 +1202,4 @@ margin-bottom:-20px;
     border: solid #5d5d5d;
     border-width: 0 2px 2px 0;
     transform: rotate(135deg);
-}
-
-/*MOBILE DESIGN*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    /* Your styles here */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* Your styles here */
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /* Your styles here */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* Your styles here */
-    
-    .hero{
-        background: url("img/2.jpg") right/cover no-repeat;
-        background-size: cover;
-        background-position: right;
-    }
-    
-    .hero-text h1 {
-        font-size: 250% !important;
-    }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {
-    /* Your styles here */
-    .hero{
-        background: url("img/2.jpg") right/cover no-repeat;
-        background-size: cover;
-        background-position: right;
-    }
-    
-    .hero-text h1 {
-        -size: 250% !important;
-    }
-
 }

@@ -27,7 +27,6 @@
         font-size: 5px;
     }
 
-
     .book-apmt {
         font-size: 5px;
         margin-left: 10px;
@@ -41,18 +40,21 @@
         background-attachment: local;
     }
 
-    .hero-content {
-        margin: 0;
-        width: 50vw;
-    }
-
-    .hero-content h1 {
+    .welcome {
         font-size: 20px !important;
     }
 
+    .hero-content {
+        margin: 0;
+        width: 71vw;
+    }
+
+    .hero-text-sub p {
+        font-size: 14px;
+    }
 
     .hero-text h1 {
-        font-size: 16px;
+        font-size: 35px;
     }
 
     .hero-content .button {
@@ -60,7 +62,12 @@
     }
 
     .about-info h2 {
-        font-size: 20px !important;
+        font-size: 30px !important;
+    }
+
+    .about-info p {
+    font-size: 18px;
+    padding: 0 15px;
     }
 
     #services h2 {
@@ -193,6 +200,7 @@
     #contact-info {
         height: 40vh;
         padding: 10px;
+        width: 100%;
     }
 
     #contact-info h3 {
@@ -203,15 +211,37 @@
 
     .leftnright {
         flex-direction: column-reverse;
+        margin-bottom: 60px;
+    }
+
+    .contact-info1A {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 10px 25px 10px;
     }
 
     .contact-info1B {
         display: none;
     }
 
+    .hours-info1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
     #map p {
         font-size: 14px;
         margin: 5px;
+    }
+
+    #map {
+        margin-bottom: 0px;
     }
 
     .footer-container1 {
@@ -228,7 +258,7 @@
     }
 
     .footer-contact {
-        width: 100%;   
+        width: 100%;
     }
 
     .footer-logo img {
@@ -241,7 +271,7 @@
         text-align: center;
     }
 
-    #myBtn{
+    #myBtn {
         right: 24vw;
         padding: 8px;
 

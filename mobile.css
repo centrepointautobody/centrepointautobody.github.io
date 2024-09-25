@@ -1,15 +1,7 @@
-
-
 /* Landscape phones and down */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-    #topHeader{
+    #topHeader {
         width: 20vw;
     }
 
@@ -30,36 +22,238 @@
         margin-right: 0px;
     }
 
-    header nav ul{
+    header nav ul {
         gap: 15px;
         font-size: 5px;
     }
 
 
-    .book-apmt{
-        font-size:5px;
+    .book-apmt {
+        font-size: 5px;
         margin-left: 10px;
     }
 
-    #headerlinks{
+    #headerlinks {
+        width: 50%;
+    }
+
+    .hero {
+        background-attachment: local;
+    }
+
+    .hero-content {
+        margin: 0;
+        width: 50vw;
+    }
+
+    .hero-content h1 {
+        font-size: 20px !important;
+    }
+
+
+    .hero-text h1 {
+        font-size: 16px;
+    }
+
+    .hero-content .button {
+        width: 50%;
+    }
+
+    .about-info h2 {
+        font-size: 20px !important;
+    }
+
+    #services h2 {
+        font-size: 3rem;
+    }
+
+    .service-container {
+        height: 100vh;
+        width: 85%;
+    }
+
+    .service-container .button {
+        width: 50%;
+    }
+
+    #services {
+        padding-bottom: 150px;
+    }
+
+    .split-row {
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .split-left {
+        width: 100%;
+    }
+
+    .split-right {
+        width: 100%;
+    }
+
+    .split-left p,
+    .split-right p {
+        padding: 0 30px;
+    }
+
+    body>main>section.split-container>div:nth-child(2),
+    body>main>section.split-container>div:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    #backonroad {
+        background-attachment: local;
+    }
+
+    .section h2 {
+        font-size: 3rem;
+    }
+
+    #testimonials h2 {
+        font-size: 3rem;
+    }
+
+    #gallery {
+        padding-bottom: 35px;
+    }
+
+    #gallery h2 {
+        font-size: 3rem;
+    }
+
+    #gallery h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .slideflex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .sliderbody {
+        height: 35vh;
+    }
+
+    .slidercontainer {
+        width: 85vw;
+        height: 30vh;
+    }
+
+    .slidercontainer .slider::-webkit-slider-thumb {
+        height: 30vh;
+    }
+
+    .slider1 {
+        width: 87vw;
+    }
+
+    .thumbnails {
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .thumbnails img {
+        margin: 1px;
+    }
+
+    #contact {}
+
+    #contact h2 {
+        font-size: 36px;
+    }
+
+    #hours {
+        height: 70vh;
+    }
+
+    #contact-info {
+        height: 40vh;
+    }
+    #contact-info h3 {margin: 0;}
+
+    .leftnright {
+        flex-direction: column-reverse;
+    }
+    .contact-info1B{
+        display: none;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+    #topHeader {
+        width: 20vw;
+    }
+
+    header {
+        height: 6vh;
+    }
+
+    header .container {
+        display: flex;
+        align-items: center;
+        height: 6vh;
+        margin: 0px;
+        width: 50%;
+    }
+
+    header .logo {
+        width: 100% !important;
+        margin-right: 0px;
+    }
+
+    header nav ul {
+        gap: 15px;
+        font-size: 5px;
+    }
+
+
+    .book-apmt {
+        font-size: 5px;
+        margin-left: 10px;
+    }
+
+    #headerlinks {
         width: 50%;
     }
 
 
-    .hero-content{
+    .hero-content {
         margin: 0;
         width: 50vw;
     }
-    .hero-content h1{
-        font-size: 20px !important;    }
+
+    .hero-content h1 {
+        font-size: 20px !important;
+    }
 
 
+    .hero-text h1 {
+        font-size: 16px;
+    }
 
+    .hero-content .button {
+        width: 50%;
+    }
 
-
-        .about-info h2 {
-            font-size: 20px !important;
-        }
+    .about-info h2 {
+        font-size: 20px !important;
+    }
 
 
 

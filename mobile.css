@@ -174,21 +174,109 @@
     }
 
     #hours {
-        height: 70vh;
+        height: 35vh;
+        padding: 10px 10px 72px 10px;
+        width: 100%;
+    }
+
+    #hours h3 {
+        font-size: 20px;
+
+        margin: 0;
+    }
+
+    .hours-table th,
+    .hours-table td {
+        padding: 0px;
     }
 
     #contact-info {
         height: 40vh;
+        padding: 10px;
     }
-    #contact-info h3 {margin: 0;}
+
+    #contact-info h3 {
+        margin: 0;
+        font-size: 20px;
+
+    }
 
     .leftnright {
         flex-direction: column-reverse;
     }
-    .contact-info1B{
+
+    .contact-info1B {
         display: none;
     }
+
+    #map p {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .footer-container1 {
+        flex-direction: column;
+    }
+
+    .footer-container3 {
+        flex-direction: column-reverse;
+    }
+
+    .footer-links {
+        width: 100%;
+
+    }
+
+    .footer-contact {
+        width: 100%;   
+    }
+
+    .footer-logo img {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .copyright {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    #myBtn{
+        right: 24vw;
+        padding: 8px;
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {}

@@ -70,6 +70,10 @@
     padding: 0 15px;
     }
 
+    #services > div > ul:nth-child(3) > li:nth-child(1) {
+        margin-bottom: 10px;
+    }
+    body > main > section.split-container > div:nth-child(1) > div.split-left > div { margin-top: 100px;}
     #services h2 {
         font-size: 3rem;
     }
@@ -84,7 +88,6 @@
     }
 
     #services {
-        padding-bottom: 150px;
     }
 
     .split-row {

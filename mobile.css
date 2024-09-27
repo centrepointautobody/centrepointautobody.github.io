@@ -1,9 +1,28 @@
+@media (max-width: 375px) {
+
+    #contact h2 {
+        font-size: 30px;
+    }
+
+    #hours {
+        width: 80vw !important;
+    }
+
+    #contact-info {
+        width: 80vw !important;
+    }
+
+    #contact-info>div>p a {
+        font-size: 4vw !important;
+    }
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
     #topHeader {
-        width: 75vw;   
-     }
+        width: 75vw;
+    }
 
     header {
         height: 6vh;
@@ -66,14 +85,18 @@
     }
 
     .about-info p {
-    font-size: 18px;
-    padding: 0 15px;
+        font-size: 18px;
+        padding: 0 15px;
     }
 
-    #services > div > ul:nth-child(3) > li:nth-child(1) {
+    #services>div>ul:nth-child(3)>li:nth-child(1) {
         margin-bottom: 10px;
     }
-    body > main > section.split-container > div:nth-child(1) > div.split-left > div { margin-top: 100px;}
+
+    body>main>section.split-container>div:nth-child(1)>div.split-left>div {
+        margin-top: 100px;
+    }
+
     #services h2 {
         font-size: 3rem;
     }
@@ -87,8 +110,7 @@
         width: 50%;
     }
 
-    #services {
-    }
+    #services {}
 
     .split-row {
         flex-direction: column;
@@ -154,7 +176,11 @@
         width: 85vw;
         height: 30vh;
     }
-    .slidercontainer .img{background-size: 400px 100%;}
+
+    .slidercontainer .img {
+        background-size: 400px 100%;
+    }
+
     .slidercontainer .slider::-webkit-slider-thumb {
         height: 30vh;
     }
@@ -177,7 +203,9 @@
         margin: 1px;
     }
 
-    #contact {padding: 2em 0px;}
+    #contact {
+        padding: 2em 0px;
+    }
 
     #contact h2 {
         font-size: 36px;

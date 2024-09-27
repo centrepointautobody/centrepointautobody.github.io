@@ -2,8 +2,8 @@
 @media (max-width: 480px) {
 
     #topHeader {
-        width: 20vw;
-    }
+        width: 75vw;   
+     }
 
     header {
         height: 6vh;
@@ -154,7 +154,7 @@
         width: 85vw;
         height: 30vh;
     }
-
+    .slidercontainer .img{background-size: 400px 100%;}
     .slidercontainer .slider::-webkit-slider-thumb {
         height: 30vh;
     }
@@ -177,7 +177,7 @@
         margin: 1px;
     }
 
-    #contact {}
+    #contact {padding: 2em 0px;}
 
     #contact h2 {
         font-size: 36px;

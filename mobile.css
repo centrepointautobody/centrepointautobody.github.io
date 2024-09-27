@@ -16,7 +16,8 @@
         font-size: 4vw !important;
     }
 }
-
+/*****************************************************************************************************/
+/*****************************************************************************************************/
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
@@ -98,7 +99,7 @@
     }
 
     #services h2 {
-        font-size: 3rem;
+        font-size: 10vw;
     }
 
     .service-container {
@@ -111,7 +112,9 @@
     }
 
     #services {}
-
+    .split-row h4 {
+        font-size: 12vw;
+    }
     .split-row {
         flex-direction: column;
         margin-bottom: 100px;
@@ -140,11 +143,11 @@
     }
 
     .section h2 {
-        font-size: 3rem;
+        font-size: 10vw;
     }
 
     #testimonials h2 {
-        font-size: 3rem;
+        font-size: 10vw;
     }
 
     #gallery {
@@ -152,7 +155,7 @@
     }
 
     #gallery h2 {
-        font-size: 3rem;
+        font-size: 10vw;
     }
 
     #gallery h4 {
@@ -308,8 +311,8 @@
 
     }
 }
-
-
+/*****************************************************************************************************/
+/*****************************************************************************************************/
 
 
 

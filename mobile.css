@@ -1,5 +1,8 @@
 @media (max-width: 375px) {
 
+    #contact h4{
+        margin-top: -40px !important;
+    }
 
     #topHeader {
         width: 75vw;
@@ -258,6 +261,7 @@
 
     #map {
         margin-bottom: 0px;
+
     }
 
     .footer-container1 {
@@ -457,7 +461,7 @@
     }
 
     .slidercontainer {
-        width: 62vw;
+        width: 80vw;
         height: 30vh;
     }
 

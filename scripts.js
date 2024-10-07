@@ -143,6 +143,12 @@ $("#slider4-range").on("input change", (e) => {
     $('.foreground-img4').css('width', `${sliderPos}%`);
 });
 
+$("#slider-mt-range").on("input change", (e) => {
+    const sliderPos = e.target.value;
+    $('.slider-button-mt').css('left', `calc(${sliderPos}% - 18px)`);
+    $('.foreground-img-mt').css('width', `${sliderPos}%`);
+});
+
 
 
 

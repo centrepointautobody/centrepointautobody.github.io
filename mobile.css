@@ -67,7 +67,7 @@
     }
 
     .about-info h2 {
-        font-size: 30px !important;
+        font-size: 22px !important;
     }
 
     .about-info p {
@@ -136,7 +136,7 @@
     }
 
     #gallery {
-        padding-bottom: 35px;
+        padding-bottom: 50px;
     }
 
     #gallery h2 {
@@ -161,7 +161,7 @@
     }
 
     .slidercontainer {
-        width: 62vw;
+        width: 80vw;
         height: 30vh;
     }
 
@@ -604,6 +604,9 @@
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
 
+    #contact h4{
+        margin-top: -30px !important;
+    }
 
 
     #topHeader {

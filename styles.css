@@ -1237,16 +1237,17 @@ footer h4 {
     display: none;
     list-style: none;
     flex-direction: column;
-    background-color: #333;
+    background-color: #000000;
     position: absolute;
-    top: 60px;
     width: 100%;
     left: 0;
+    padding: 120px 0px;
 }
 
 .mobile-nav li {
     text-align: center;
     padding: 10px 0;
+    font-size: 20px;
 }
 
 .mobile-nav a {

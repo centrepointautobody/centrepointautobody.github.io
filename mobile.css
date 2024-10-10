@@ -1909,3 +1909,49 @@
     }
 
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1300px) and (max-width: 1445px) {
+.slidercontainer{
+    width: 31vw;
+    height: 350px;
+}
+.slidercontainer .img{
+    background-size: 450px 100%;
+}
+.slidercontainer .slider::-webkit-slider-thumb {
+    height: 350px;
+}
+
+
+
+}
+
+@media (min-width: 1446px) and (max-width: 1900px) {
+
+    .slidercontainer .img{
+        background-size: 600px 100%;
+    }
+    .slidercontainer{
+        width: 31vw;
+        height: 350px;
+    }
+    .slidercontainer .slider::-webkit-slider-thumb {
+        height: 350px;
+    }
+    }
+    
+    @media (min-width: 1901px) and (max-width: 2200px) {
+
+        .slidercontainer .img{
+            background-size: 600px 100%;
+        }
+        .slidercontainer{
+            width: 31vw;
+            height: 350px;
+        }
+        .slidercontainer .slider::-webkit-slider-thumb {
+            height: 350px;
+        }
+        }
+        

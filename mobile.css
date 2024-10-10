@@ -1,6 +1,6 @@
 @media (max-width: 375px) {
 
-        
+
     .nav-links {
         display: none;
     }
@@ -13,7 +13,7 @@
         display: flex;
     }
 
-    #contact h4{
+    #contact h4 {
         margin-top: -40px !important;
     }
 
@@ -48,8 +48,7 @@
         margin-left: 10px;
     }
 
-    #headerlinks {
-    }
+    #headerlinks {}
 
     .hero {
         background-attachment: local;
@@ -87,7 +86,9 @@
         padding: 0 15px;
     }
 
-    #services>div>ul:nth-child(3)>li:nth-child(1) {margin-bottom: 10px;}
+    #services>div>ul:nth-child(3)>li:nth-child(1) {
+        margin-bottom: 10px;
+    }
 
     body>main>section.split-container>div:nth-child(1)>div.split-left>div {
         margin-top: 100px;
@@ -317,7 +318,7 @@
 /*****************************************************************************************************/
 /* Landscape phones and down */
 @media (min-width: 376px) and (max-width: 480px) {
-        
+
     .nav-links {
         display: none;
     }
@@ -366,8 +367,7 @@
         margin-left: 10px;
     }
 
-    #headerlinks {
-    }
+    #headerlinks {}
 
     .hero {
         background-attachment: local;
@@ -405,7 +405,9 @@
         padding: 0 15px;
     }
 
-    #services>div>ul:nth-child(3)>li:nth-child(1) {margin-bottom: 10px;}
+    #services>div>ul:nth-child(3)>li:nth-child(1) {
+        margin-bottom: 10px;
+    }
 
     body>main>section.split-container>div:nth-child(1)>div.split-left>div {
         margin-top: 100px;
@@ -644,9 +646,10 @@
 
     .mobile-nav.active {
         display: flex;
+        top: 68px;
     }
 
-    #contact h4{
+    #contact h4 {
         margin-top: -30px !important;
         padding: 0px 5%;
     }
@@ -657,12 +660,11 @@
     }
 
     header {
-        height: 6vh;
+        height: 10vh;
     }
 
     header .container {
         display: flex;
-        align-items: center;
         height: 6vh;
         margin: 0px;
         width: 50%;
@@ -683,8 +685,7 @@
         margin-left: 10px;
     }
 
-    #headerlinks {
-    }
+    #headerlinks {}
 
     .hero {
         background-attachment: local;
@@ -702,9 +703,11 @@
     .hero-text-sub p {
         font-size: 12px;
     }
+
     .hero-text-sub h2 {
         font-size: 20px;
     }
+
     .hero-text h1 {
         font-size: 10vw;
     }
@@ -722,8 +725,7 @@
         padding: 0 15px;
     }
 
-    #services>div>ul:nth-child(3)>li:nth-child(1) {
-    }
+    #services>div>ul:nth-child(3)>li:nth-child(1) {}
 
     body>main>section.split-container>div:nth-child(1)>div.split-left>div {
         margin-top: 100px;
@@ -956,7 +958,7 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-        
+
     .nav-links {
         display: none;
     }
@@ -970,7 +972,7 @@
     }
 
 
-    #contact h4{
+    #contact h4 {
         margin-top: -40px;
         padding: 0px 5%;
     }
@@ -980,12 +982,11 @@
     }
 
     header {
-        height: 6vh;
+        height: 10vh;
     }
 
     header .container {
         display: flex;
-        align-items: center;
         height: 6vh;
         margin: 0px;
         width: 50%;
@@ -1006,8 +1007,7 @@
         margin-left: 10px;
     }
 
-    #headerlinks {
-    }
+    #headerlinks {}
 
     .hero {
         background-attachment: local;
@@ -1025,9 +1025,11 @@
     .hero-text-sub p {
         font-size: 12px;
     }
+
     .hero-text-sub h2 {
         font-size: 20px;
     }
+
     .hero-text h1 {
         font-size: 10vw;
     }
@@ -1045,8 +1047,7 @@
         padding: 0 15px;
     }
 
-    #services>div>ul:nth-child(3)>li:nth-child(1) {
-    }
+    #services>div>ul:nth-child(3)>li:nth-child(1) {}
 
     body>main>section.split-container>div:nth-child(1)>div.split-left>div {
         margin-top: 100px;
@@ -1135,9 +1136,11 @@
         height: 40vh;
         margin-bottom: 110px;
     }
-    .slidercontainer .slider{
+
+    .slidercontainer .slider {
         width: 101%;
     }
+
     .slidercontainer {
         width: 85vw;
         height: 50vh;
@@ -1150,9 +1153,14 @@
     .slidercontainer .slider::-webkit-slider-thumb {
         height: 50vh;
     }
-    .slidercontainer .slider-button2, .slider-button1, .slider-button3, .slider-button4 {
+
+    .slidercontainer .slider-button2,
+    .slider-button1,
+    .slider-button3,
+    .slider-button4 {
         left: calc(50% - 15px);
     }
+
     .slider1 {
         width: 87vw;
     }
@@ -1286,7 +1294,7 @@
 @media (min-width: 980px) and (max-width: 1200px) {
 
 
-    #contact h4{
+    #contact h4 {
         margin-top: -30px !important;
         padding: 0px 5%;
     }
@@ -1323,8 +1331,7 @@
         margin-left: 10px;
     }
 
-    #headerlinks {
-    }
+    #headerlinks {}
 
     .hero {
         background-attachment: local;
@@ -1342,9 +1349,11 @@
     .hero-text-sub p {
         font-size: 12px;
     }
+
     .hero-text-sub h2 {
         font-size: 20px;
     }
+
     .hero-text h1 {
         font-size: 10vw;
     }
@@ -1362,8 +1371,7 @@
         padding: 0 15px;
     }
 
-    #services>div>ul:nth-child(3)>li:nth-child(1) {
-    }
+    #services>div>ul:nth-child(3)>li:nth-child(1) {}
 
     body>main>section.split-container>div:nth-child(1)>div.split-left>div {
         margin-top: 100px;
@@ -1595,363 +1603,58 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-
-
-    #contact h4{
-        margin-top: -40px;
-        padding: 0px 5%;
-    }
-
-    #topHeader {        width: 100%;
-
-    }
-
-    header {
-        height: 6vh;
-    }
-
-    header .container {
-        display: flex;
-        align-items: center;
-        height: 6vh;
-        margin: 0px;
-        width: 50%;
-    }
-
-    header .logo {
-        width: 75% !important;
-        margin-right: 0px;
-    }
-
-    header nav ul {
-        gap: 15px;
-        font-size: 5px;
-    }
-
-    .book-apmt {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-
-    #headerlinks {
-    }
-
-    .hero {
-        background-attachment: local;
-    }
-
-    .welcome {
-        font-size: 45px !important;
-    }
-
-    .hero-content {
-        margin: 0;
-        width: 71vw;
-    }
-
-    .hero-text-sub p {
-        font-size: 12px;
-    }
-    .hero-text-sub h2 {
-        font-size: 20px;
-    }
-    .hero-text h1 {
-        font-size: 10vw;
-    }
-
-    .hero-content .button {
-        width: 50%;
-    }
-
-    .about-info h2 {
-        font-size: 30px !important;
-    }
-
-    .about-info p {
-        font-size: 18px;
-        padding: 0 15px;
-    }
-
-    #services>div>ul:nth-child(3)>li:nth-child(1) {
-    }
-
-    body>main>section.split-container>div:nth-child(1)>div.split-left>div {
-        margin-top: 100px;
-    }
-
-    #services h2 {
-        font-size: 10vw;
-    }
-
-    .service-container {
-        height: 100vh;
-        width: 85%;
-    }
-
-    .service-container .button {
-        width: 50%;
-    }
-
-    #services {}
-
-    .split-row h4 {
-        font-size: 6vw;
-    }
-
-    .split-row {
-        flex-direction: column;
-        margin-bottom: 100px;
-    }
-
-    .split-left {
-        width: 100%;
-    }
-
-    .split-right {
-        width: 100%;
-    }
-
-    .split-left p,
-    .split-right p {
-        padding: 0 30px;
-    }
-
-    body>main>section.split-container>div:nth-child(2),
-    body>main>section.split-container>div:nth-child(4) {
-        flex-direction: column-reverse;
-    }
-
-    #backonroad {
-        background-attachment: local;
-    }
-
-    #backonroad h2 {
-        font-size: 5vw;
-    }
-
-    .section h2 {
-        font-size: 10vw;
-    }
-
-    #testimonials h2 {
-        font-size: 10vw;
-    }
-
-    #gallery {
-        padding-bottom: 35px;
-    }
-
-    #gallery h2 {
-        font-size: 10vw;
-    }
-
-    #gallery h4 {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .slideflex {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .sliderbody {
-        height: 40vh;
-        margin-bottom: 110px;
-    }
-    .slidercontainer .slider{
-        width: 101%;
-    }
+@media (min-width: 1201px) and (max-width: 1445px) {
     .slidercontainer {
-        width: 85vw;
-        height: 50vh;
+        width: 31vw;
+        height: 350px;
     }
 
     .slidercontainer .img {
-        background-size: 85vw 100%;
+        background-size: 450px 100%;
     }
 
     .slidercontainer .slider::-webkit-slider-thumb {
-        height: 50vh;
-    }
-    .slidercontainer .slider-button2, .slider-button1, .slider-button3, .slider-button4 {
-        left: calc(50% - 15px);
-    }
-    .slider1 {
-        width: 87vw;
+        height: 350px;
     }
 
-    .thumbnails {
-        display: flex;
-        margin-top: 10px;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
+    #services {
+        padding-bottom: 100px;
     }
 
-    .thumbnails img {
-        margin: 1px;
+    #services h2 {
+        font-size: 6rem;
     }
-
-    #contact {
-        padding: 2em 0px;
-    }
-
-    #contact h2 {
-        font-size: 36px;
-    }
-
-    #hours {
-        height: 35vh;
-        padding: 10px 10px 72px 10px;
-        width: 80vw;
-    }
-
-    #hours h3 {
-        font-size: 20px;
-
-        margin: 0;
-    }
-
-    .hours-table th,
-    .hours-table td {
-        padding: 0px;
-    }
-
-    #contact-info {
-        height: 40vh;
-        padding: 10px;
-        width: 80vw;
-    }
-
-    #contact-info h3 {
-        margin: 0;
-        font-size: 20px;
-
-    }
-
-    .leftnright {
-        flex-direction: column-reverse;
-        margin-bottom: 60px;
-    }
-
-    .contact-info1A {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        margin: 0 10px 25px 10px;
-    }
-
-    .contact-info1B {
-        display: none;
-    }
-
-    .hours-info1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    #map p {
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    #map {
-        margin-bottom: 20px;
-        width: 83vw;
-    }
-
-    .footer-container1 {
-        flex-direction: column;
-    }
-
-    .footer-container3 {
-        flex-direction: column-reverse;
-        display: flex;
-        align-items: center;
-    }
-
-    .footer-links {
-        width: 100%;
-
-    }
-
-    .footer-contact {
-        width: 100%;
-    }
-
-    .footer-logo img {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .copyright {
-        font-size: 11px;
-        text-align: center;
-    }
-
-    #myBtn {
-        right: 2%;
-        bottom: 1%;
-        padding: 2px 6px;
-
-    }
-
-}
-
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 1300px) and (max-width: 1445px) {
-.slidercontainer{
-    width: 31vw;
-    height: 350px;
-}
-.slidercontainer .img{
-    background-size: 450px 100%;
-}
-.slidercontainer .slider::-webkit-slider-thumb {
-    height: 350px;
-}
-
-
 
 }
 
 @media (min-width: 1446px) and (max-width: 1900px) {
 
-    .slidercontainer .img{
+    .slidercontainer .img {
         background-size: 600px 100%;
     }
-    .slidercontainer{
+
+    .slidercontainer {
         width: 31vw;
         height: 350px;
     }
+
     .slidercontainer .slider::-webkit-slider-thumb {
         height: 350px;
     }
-    }
-    
-    @media (min-width: 1901px) and (max-width: 2200px) {
+}
 
-        .slidercontainer .img{
-            background-size: 600px 100%;
-        }
-        .slidercontainer{
-            width: 31vw;
-            height: 350px;
-        }
-        .slidercontainer .slider::-webkit-slider-thumb {
-            height: 350px;
-        }
-        }
-        
+@media (min-width: 1901px) and (max-width: 2200px) {
+
+    .slidercontainer .img {
+        background-size: 700px 100%;
+    }
+
+    .slidercontainer {
+        width: 31vw;
+        height: 350px;
+    }
+
+    .slidercontainer .slider::-webkit-slider-thumb {
+        height: 350px;
+    }
+}

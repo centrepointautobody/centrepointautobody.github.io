@@ -1254,3 +1254,15 @@ footer h4 {
     color: white;
     text-decoration: none;
 }
+.solid > div > nav > .hamburger > .bar {
+background-color: #ed1c24;
+}
+
+.solid > div > nav > .mobile-nav {
+    background-color: #ffffff;
+    }
+
+
+.solid > div > nav > .mobile-nav > li > a {
+        color: #ed1c24 !important;
+    }

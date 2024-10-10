@@ -1218,3 +1218,38 @@ footer h4 {
 .testimonials{
     overflow-x: hidden;
 }
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.mobile-nav {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+}
+
+.mobile-nav li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+}

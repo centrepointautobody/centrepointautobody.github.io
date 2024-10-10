@@ -152,11 +152,30 @@ $("#slider-mt-range").on("input change", (e) => {
 
 
 
-
 // Toggle mobile menu visibility
 const hamburger = document.getElementById('hamburger');
 const mobileNav = document.getElementById('mobile-nav');
+const mobileNavLinks = document.querySelectorAll('.mobile-nav li a');
 
-hamburger.addEventListener('click', () => {
+// Function to close the menu
+function closeMenu() {
+    mobileNav.classList.remove('active');
+}
+
+// Toggle menu when hamburger is clicked
+hamburger.addEventListener('click', (e) => {
+    e.stopPropagation();  // Prevent click from bubbling up and triggering the document click event
     mobileNav.classList.toggle('active');
+});
+
+// Close the menu when a link is clicked
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Close the menu when clicking outside the menu
+document.addEventListener('click', (e) => {
+    if (!mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        closeMenu();
+    }
 });

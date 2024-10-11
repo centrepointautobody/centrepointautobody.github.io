@@ -341,19 +341,19 @@
     }
 
     header {
-        height: 6vh;
+        height: 8vh;
+
     }
 
     header .container {
         display: flex;
-        align-items: center;
         height: 6vh;
         margin: 0px;
         width: 50%;
     }
 
     header .logo {
-        width: 75% !important;
+        width: 100% !important;
         margin-right: 0px;
     }
 
@@ -671,7 +671,7 @@
     }
 
     header .logo {
-        width: 75% !important;
+        width: 200px !important;
         margin-right: 0px;
     }
 
@@ -969,6 +969,7 @@
 
     .mobile-nav.active {
         display: flex;
+        top: 80px;
     }
 
 
@@ -982,7 +983,7 @@
     }
 
     header {
-        height: 10vh;
+        height: 90px;
     }
 
     header .container {
@@ -1019,6 +1020,7 @@
 
     .hero-content {
         margin: 0;
+        margin-top: 100px;
         width: 71vw;
     }
 
@@ -1305,12 +1307,11 @@
     }
 
     header {
-        height: 6vh;
+        height: 12vh;
     }
 
     header .container {
         display: flex;
-        align-items: center;
         height: 6vh;
         margin: 0px;
         width: 50%;
@@ -1323,7 +1324,7 @@
 
     header nav ul {
         gap: 15px;
-        font-size: 5px;
+        font-size: 12px;
     }
 
     .book-apmt {
@@ -1344,6 +1345,7 @@
     .hero-content {
         margin: 0;
         width: 71vw;
+        margin-top: 100px;
     }
 
     .hero-text-sub p {
@@ -1625,10 +1627,20 @@
         font-size: 6rem;
     }
 
+    header .logo {
+        margin-right: 0px;
+    }
+
+    .hero {height: 140vh;
+    }
 }
 
 @media (min-width: 1446px) and (max-width: 1900px) {
-
+    .hero {height: 140vh;
+    }
+    header .logo{
+        margin-right: 300px;
+    }
     .slidercontainer .img {
         background-size: 600px 100%;
     }
